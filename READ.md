@@ -1,0 +1,84 @@
+# Lord of the Rings API SDK
+
+Looking to explore the wonders of Middle Earth? Uchenna's The Lord of the Rings API SDK has got you covered! With this user-friendly SDK, you can easily interact with the Lord of the Rings API to retrieve information about movies and quotes. We have support for filter, pagination, and more! Whether you're a die-hard fan or just starting your journey, the Uchenna's LotR API SDK makes it easy to access the fascinating world of Middle Earth.
+
+## Easy Installation like a Wizard of Middle Earth
+
+To install the SDK, run:
+
+```bash
+npm install uche-lotr-sdk
+```
+
+## Compile locally, if you dare!
+
+To compile the SDK, run:
+
+```bash
+npm run build
+```
+
+## Run locally, at your own peril
+
+To run the SDK locally, take a look at the [example](local_run.js) script and run:
+
+```bash
+node local.js
+```
+
+## Run tests
+
+To execute the tests, run:
+
+```bash
+npm run test
+
+```
+
+## How to use the client like Gandalf
+
+Import the LotrAPIClient class and create an instance with your API key:
+
+```typescript
+import { LotrAPIClient } from 'uche-lotr-sdk';
+
+const apiKey = 'LOTR-API-KEY';
+const LotrClient = new LotrAPIClient(apiKey);
+```
+*Note: Replace 'api-key' with your actual API key!*
+*You can obtain an API key from the official [Lord of the Rings API website](https://the-one-api.dev/)*
+
+# Quotes
+### Get Quotes
+
+```typescript
+const quotes = await LotrClient.getQuotes();
+```
+
+### Get Quote
+```typescript
+const quoteId = '5cd96e05de30eff6ebccf124';
+const quote = await LotrClient.getQuote(quoteId);
+```
+
+# Movies
+### List Movies
+
+```typescript
+const movies = await LotrClient.listMovies();
+```
+
+### Get Movie
+
+```typescript
+const movieId = '5cd95395de30eff6ebccde5c';
+const movie = await LotrClient.getMovie(movieId);
+```
+# Movie-Quotes
+### Get Movie Quotes
+
+```typescript
+const movieId = '5cd95395de30eff6ebccde5c';
+const quotes = await LotrClient.getMovieQuotes(movieId);
+```
+
