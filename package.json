@@ -1,5 +1,17 @@
 {
   "devDependencies": {
     "typescript": "^5.0.4"
-  }
+  },
+  "name": "uche-lotr-sdk",
+  "version": "1.0.0",
+  "description": "Easily interact with the Lord of the Rings API to retrieve information about movies and quotes",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jtest"
+  },
+  "keywords": [
+    "lotr-sdk"
+  ],
+  "author": "Uchenna Kevin Anyanwu",
+  "license": "ISC"
 }
