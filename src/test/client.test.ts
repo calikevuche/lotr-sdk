@@ -1,5 +1,4 @@
 import {Client} from '../client';
-import axios from 'axios';
 
 let client: Client;
 beforeEach(() => {

@@ -1,6 +1,5 @@
 import {Client} from '../client';
 import {Query} from '../type/query';
-import {Response} from '../type/response';
 export abstract class BaseGetSrvc {
   protected abstract getRsrcName(): string;
   constructor(protected client: Client) {}
