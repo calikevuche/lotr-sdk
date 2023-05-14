@@ -4,6 +4,6 @@ export class LotrSDK {
   private readonly clientLotr: Client;
 
   constructor(private apiPrvKey: string) {
-    this.clientLotr = new Client();
+    this.clientLotr = new Client(apiPrvKey);
   }
 }

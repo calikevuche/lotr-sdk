@@ -1,3 +1,3 @@
-export interface clientConf {
+export interface ClientConf {
   apiPrivKey: string;
 }
