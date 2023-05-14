@@ -2,7 +2,7 @@ import { clientConf } from "../type";
 
 export class Client {
   private baseUrl = 'https://the-one-api.dev';
-  private apiKey = "API-KEY";
+  private apiKey = 'API-KEY';
 
   public confClient(conf: clientConf) {
     this.apiKey = conf.apiPrivKey;
