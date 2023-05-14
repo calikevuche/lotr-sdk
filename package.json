@@ -1,13 +1,22 @@
 {
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0",
+    "@types/node": "^14.11.2"
   },
   "name": "uche-lotr-sdk",
   "version": "1.0.0",
   "description": "Easily interact with the Lord of the Rings API to retrieve information about movies and quotes",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jtest"
+    "test": "jtest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
   },
   "keywords": [
     "lotr-sdk"
