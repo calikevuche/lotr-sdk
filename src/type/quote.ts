@@ -3,5 +3,4 @@ export interface Quote {
   dialog: string;
   movie: string;
   character: string;
-  id: string;
 }
