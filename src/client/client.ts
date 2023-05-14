@@ -1,4 +1,4 @@
-import { ClientConf } from "../type";
+import {ClientConf} from '../type';
 
 export class Client {
   private baseUrl = 'https://the-one-api.dev';
@@ -16,12 +16,14 @@ export class Client {
     return `${this.baseUrl}/${this.version}/${url}`;
   }
   public async get<T>(url: string): Promise<T> {
-    const response = await fetch(this.formatUrl(url), { headers: { Authorization: `Bearer ${this.apiKey}`}});
+    const response = await fetch(this.formatUrl(url), {
+      headers: {Authorization: `Bearer ${this.apiKey}`},
+    });
 
     if (!response.ok) {
       throw new Error(response.statusText);
     }
 
-    return await response.json() as T;
+    return await response.json();
   }
 }
