@@ -9,8 +9,7 @@ export class MovieService extends BaseGetSrvc {
     movieId: string,
     query?: Query
   ): Promise<Response<Quote>> {
-    const url = `${this.rsrcUrl}/${movieId}/
-    quote${query ? `?${query}` : ''}`;
+    const url = `${this.rsrcUrl}/${movieId}/quote${query ? `?${query}` : ''}`;
     return await this.client.get(url);
   }
 
