@@ -1,4 +1,4 @@
-# LORT SDK Design
+# LOTR SDK Design
 
 ## Client
 
