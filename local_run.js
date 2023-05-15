@@ -1,6 +1,6 @@
 const {LotrSDK} = require('./build/src/lotr');
 
-const apiKey = '***REMOVED***';
+const apiKey = 'API-KEY';
 const api = new LotrSDK(apiKey);
 
 (async () => {

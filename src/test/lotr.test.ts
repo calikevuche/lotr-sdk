@@ -4,7 +4,7 @@ import {Movie} from '../type/movie';
 import axios from 'axios';
 import {Quote} from '../type/quote';
 
-const apiSubject = new LotrSDK('***REMOVED***');
+const apiSubject = new LotrSDK('API-KEY');
 
 jest.mock('axios');
 beforeEach(() => {
