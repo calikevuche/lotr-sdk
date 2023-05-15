@@ -15,7 +15,7 @@ npm install uche-lotr-sdk
 To compile the SDK, run:
 
 ```bash
-npm run build
+npm run compile
 ```
 
 ## Run locally, at your own peril
