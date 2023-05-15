@@ -48,10 +48,7 @@ export class LotrSDK {
   /**
    *  @param {string} movieId
    *  @param {Query} query - if omitted returns all books
-   *  @param {Pagination} query.pagination - object containing {page, limit, offset}
-   *  @param {Sort} query.sort - object containing {field, direction}
-   *  @param {Filter[]} query.filters - an array of filters by which to include results
-   *
+   * 
    *  @returns {Promise<PaginatedResponse<Quote>>} quotes
    */
   public async movieQuotes(
@@ -63,9 +60,6 @@ export class LotrSDK {
 
   /**
    *  @param {Query} query - if omitted returns all books
-   *  @param {Pagination} query.pagination - object containing {page, limit, offset}
-   *  @param {Sort} query.sort - object containing {field, direction}
-   *  @param {Filter[]} query.filters - an array of filters by which to include results
    *
    *  @returns {Promise<Response<Quote>>} quotes
    */

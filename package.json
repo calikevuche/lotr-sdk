@@ -10,6 +10,7 @@
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.1",
     "ts-node": "^10.9.1",
+    "typedoc": "https://github.com/DatenMetzgerX/typedoc/tarball/typescript-2-build",
     "webpack-cli": "^4.10.0"
   },
   "name": "uche-lotr-sdk",
@@ -25,6 +26,10 @@
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calikevuche/lotr-sdk.git"
   },
   "keywords": [
     "lotr-sdk"
