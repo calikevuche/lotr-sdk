@@ -14,7 +14,7 @@
     "webpack-cli": "^4.10.0"
   },
   "name": "uche-lotr-sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Easily interact with the Lord of the Rings API to retrieve information about movies and quotes",
   "main": "dist/index.js",
   "scripts": {
